@@ -9,15 +9,19 @@
   >
     <el-menu-item index="/">
       <i class="el-icon-s-home"></i>
-      <span slot="title">首页</span>
+      <span slot="title">Homepage</span>
     </el-menu-item>
     <el-menu-item index="/users">
-      <i class="el-icon-s-tools"></i>
-      <span slot="title">用户管理</span>
+      <i class="el-icon-user-solid"></i>
+      <span slot="title">User Management</span>
+    </el-menu-item>
+    <el-menu-item index="/products">
+      <i class="el-icon-info"></i>
+      <span slot="title">Product Information</span>
     </el-menu-item>
     <el-menu-item index="/settings">
       <i class="el-icon-s-tools"></i>
-      <span slot="title">系统设置</span>
+      <span slot="title">System Setting</span>
     </el-menu-item>
   </el-menu>
 </template>

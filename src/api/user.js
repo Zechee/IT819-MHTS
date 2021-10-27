@@ -38,3 +38,11 @@ export function postProfile(data) {
     data
   })
 }
+
+export function getUserList(data) {
+  return request({
+    url: '/userlist',
+    method: 'get',
+    data
+  })
+}

@@ -12,12 +12,12 @@
     </el-table-column>
     <el-table-column
       prop="fullname"
-      label="姓名"
+      label="Name"
       width="120">
     </el-table-column>
     <el-table-column
       prop="username"
-      label="用户名">
+      label="Username">
     </el-table-column>
 
   </el-table>

@@ -1,11 +1,16 @@
 <template>
   <el-card class="home">
-  Home
+  <button>Contract</button>
+  <button>Balance</button>
+  
   </el-card>
 
 </template>
 
 <script>
+// import Web3 from 'web3'
+// Vue.prototype.Web3 = Web3
+
 import {getListC} from "@/api/list"
 export default {        
   components: {
@@ -35,7 +40,8 @@ export default {
     },
      onok(){
        console.log('ok');
-     }
+     },
+     
   }
 }
 </script>

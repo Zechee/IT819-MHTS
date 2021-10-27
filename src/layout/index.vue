@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-aside width="200px">
-      <h1><span>VUE STARTER</span> 后台管理系统模板</h1>
+      <h1><span>MHTS</span> Manuka Honey Traceability System</h1>
       <navbar />
     </el-aside>
     <el-container>
@@ -69,16 +69,20 @@ body,
   padding: 14px 0 0 0;
   letter-spacing: 2px;
   width: 200px;
-  height: 70px;
+  height: 80px;
   font-size: 16px;
   background-color: #455467;
   color: #eef0f3;
-  text-align: center;
+  text-align: left;
 }
 .el-aside h1 span {
   letter-spacing: 4px;
   display: block;
   color: #9bcbec;
+}
+
+.el-menu {
+    border-right: 0px;
 }
 
 .el-main {
@@ -92,4 +96,5 @@ body,
   .el-icon-arrow-down {
     font-size: 12px;
   }
+
 </style>

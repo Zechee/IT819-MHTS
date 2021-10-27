@@ -7,37 +7,37 @@
         :rules="rules"
         label-width="80px"
       >
-        <h2>用户注册</h2>
-        <el-form-item label="用户名" prop="username">
+        <h2>User Registration</h2>
+        <el-form-item label="Username" prop="username">
           <el-input
-            placeholder="可以填写字母或_ 不能包含空格"
+            placeholder="Please fill in the letters and do not include spaces"
             v-model="ruleform.username"
           ></el-input>
         </el-form-item>
 
-        <el-form-item label="名字" prop="fullname">
+        <el-form-item label="Name" prop="fullname">
           <el-input
-            placeholder="例如：张三"
+            placeholder="Example: John Smith"
             v-model="ruleform.fullname"
           ></el-input>
         </el-form-item>
 
-        <el-form-item label="密码" prop="password">
+        <el-form-item label="Password" prop="password">
           <el-input
-            placeholder="密码不能低于6位"
+            placeholder="Password cannot be less than 6 digits"
             v-model="ruleform.password"
           ></el-input>
         </el-form-item>
 
-        <el-form-item label="密码确认" prop="password_confirm">
+        <el-form-item label="Confirm" prop="password_confirm">
           <el-input
-            placeholder="请再一次填写密码"
+            placeholder="Please fill in the password again"
             v-model="ruleform.password_confirm"
           ></el-input>
         </el-form-item>
 
-        <el-form-item label="当前时区">
-          <el-select v-model="ruleform.timezone" placeholder="请选择时区">
+        <el-form-item label="Time Zone">
+          <el-select v-model="ruleform.timezone" placeholder="Select time zone">
             <el-option
               v-for="item in timezones"
               :key="item.value"
@@ -49,7 +49,7 @@
         </el-form-item>
         <div class="submit">
           <el-button type="primary" @click="submitForm('ruleform')" round
-            >注册</el-button
+            >Sign up</el-button
           >
         </div>
       </el-form>
@@ -70,26 +70,26 @@ export default {
         fullname: "",
         password_confirm: "",
         password: "",
-        timezone: "+8",
+        timezone: "+13",
       },
       rules: {
         username: [
-          { required: true, message: "请输入用户名", trigger: "blur" },
+          { required: true, message: "Please enter a username", trigger: "blur" },
         ],
-        fullname: [{ required: true, message: "请输入姓名", trigger: "blur", validator: validateRealName }],
-        password: [{ required: true, message: "密码不能为空", trigger: "blur" }],
+        fullname: [{ required: true, message: "Please enter a name", trigger: "blur", validator: validateRealName }],
+        password: [{ required: true, message: "Password cannot be empty", trigger: "blur" }],
         password_confirm: [
-          { required: true, message: "密码确认不能为空", trigger: "blur" },
+          { required: true, message: "Password confirmation cannot be empty", trigger: "blur" },
         ],
       },
       timezones: [
         {
           value: "+8",
-          label: "中国",
+          label: "China",
         },
         {
           value: "+13",
-          label: "新西兰",
+          label: "New Zealand",
         },
       ],
     };
@@ -109,7 +109,7 @@ export default {
         });
         this.$router.push("login");
       } else {
-        this.$message.error("密码不能为空，或两次密码输入不一致，请重新输入。");
+        this.$message.error("The password cannot be empty or the password is not entered consistently, please re-enter it.");
       }
     },
     submitForm(formName) {

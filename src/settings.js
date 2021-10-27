@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Worklog System - YunXiang',
+  title: 'Manuka Honey Traceability System',
 
   /**
    * @type {boolean} true | false

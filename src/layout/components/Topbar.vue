@@ -4,18 +4,18 @@
   <div class="topr">
     <el-dropdown @command="handleCommand">
       <span class="el-dropdown-link">
-        当前用户: {{ getUsername() }}<i class="el-icon-arrow-down el-icon--right"></i>
+        Current User: {{ getUsername() }}<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
       <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item command="profile">修改档案</el-dropdown-item>
-        <el-dropdown-item command="logout">注销</el-dropdown-item>
+        <el-dropdown-item command="profile">Edit Profile</el-dropdown-item>
+        <el-dropdown-item command="logout">Logout</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
   </div>
 
   <el-breadcrumb separator="/">
-    <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-    <el-breadcrumb-item>系统设置</el-breadcrumb-item>
+    <el-breadcrumb-item :to="{ path: '/' }">Homepage</el-breadcrumb-item>
+    <el-breadcrumb-item>System Setting</el-breadcrumb-item>
   </el-breadcrumb>
 
 

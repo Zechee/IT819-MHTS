@@ -13,6 +13,11 @@ const routes = [
     hidden: true
   },
   {
+    path: '/query',
+    component: () => import('@/views/Query.vue'),
+    hidden: true
+  },
+  {
     path: '/register',
     component: () => import('@/views/session/register'),
     hidden: true
@@ -28,7 +33,8 @@ const routes = [
     {
       path: '/users',
       name: 'Users',
-      component: () => import('@/views/Users.vue')
+      // component: () => import('@/views/Users.vue')
+      component: () => import('@/views/users/index.vue')
     },
     {
       path: '/profile',
@@ -39,6 +45,11 @@ const routes = [
       path: '/settings',
       name: 'Settings',
       component: () => import('@/views/settings/index.vue')
+    },
+    {
+      path: '/products',
+      name: 'Products',
+      component: () => import('@/views/products/index.vue')
     }
   ]
 }]

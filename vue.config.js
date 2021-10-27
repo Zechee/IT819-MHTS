@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = defaultSettings.title || 'Worklog System - YunXiang' // page title
+const name = defaultSettings.title || 'Manuka Honey Traceability System' // page title
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
